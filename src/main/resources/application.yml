@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    tcmp:
+      url: jdbc:mysql://localhost:3306/tcmp
+      username: root
+      password: admin
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifetime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: tcmpDatasource
+    ####springBoot2 ���������Դ��ʱ�� url Ҫ�����jdbc-url  ������Դ���Զ���Ϊurl
+    test:
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: admin
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifetime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: testDatasource
+      #配置多个环境的方式 根据配置后缀进行不同环境的读取
+  profiles:
+    active: prd
+yxg:
+  yxg_name: HongKong
+  zy:
