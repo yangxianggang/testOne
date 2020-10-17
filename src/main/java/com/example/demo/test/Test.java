@@ -15,6 +15,7 @@ public class Test {
         list.add(new User("zs4", "123"));
         list.add(new User("zs3", "132"));
         list.add(new User("zs0", "133"));
+        System.out.println("杨香港就是个大混蛋");
         //******************************************************串行流进行遍历
 //        list.stream().limit(2).forEach(user *> {
 //            System.out.println("串行流进行遍历=="+user.toString());
