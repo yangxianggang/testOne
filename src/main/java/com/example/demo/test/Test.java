@@ -19,6 +19,8 @@ public class Test {
         list.add(new User("zs", "133"));
         list.add(new User("zs", "133"));
         list.add(new User("zs", "133"));
+        list.add(new User("zs", "133"));
+        list.add(new User("zs", "133"));
         //******************************************************串行流进行遍历
 //        list.stream().limit(2).forEach(user *> {
 //            System.out.println("串行流进行遍历=="+user.toString());
